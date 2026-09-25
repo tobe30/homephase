@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePhase &mdash; Homephase realty</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+   <!-- Open Graph / Facebook / WhatsApp -->
+<!-- Open Graph / WhatsApp / Facebook -->
+ <meta name="referrer" content="strict-origin-when-cross-origin">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://real-estate-iota-lemon.vercel.app/">
+<meta property="og:title" content="Homephase realty">
+<meta property="og:description" content="Prestigious residential properties across Abuja, Lagos and Port Harcourt.">
+<meta property="og:image" content="https://real-estate-iota-lemon.vercel.app/assets/img/logo.jpg">
+<meta property="og:image:alt" content="HomePhase logo">
+<meta property="og:site_name" content="HomePhase">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HomePhase — Homephase realty">
+<meta name="twitter:description" content="Prestigious residential properties across Abuja, Lagos and Port Harcourt.">
+<meta name="twitter:image" content="https://real-estate-iota-lemon.vercel.app/assets/img/logo.jpg">
+<meta name="twitter:image:alt" content="HomePhase logo">
+
+<!-- Favicon -->
+<link rel="icon" type="image/jpeg" href="/assets/img/logo.jpg">
+<!-- Favicon -->
+
+    <!-- Bootstrap 5.3.8 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Premium Instagram video presentation */
+        .video-frame--instagram {
+            position: relative;
+            min-height: 680px;
+            overflow: hidden;
+            border-radius: 2px;
+            background: #171513;
+            isolation: isolate;
+        }
+
+        .video-backdrop {
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+        }
+
+        .video-backdrop-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(14px) brightness(.45) saturate(.8);
+            transform: scale(1.08);
+        }
+
+        .video-backdrop-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(15,14,13,.35), rgba(15,14,13,.78));
+        }
+
+        .instagram-player-wrap {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 680px;
+            padding: 24px;
+        }
+
+        .instagram-player-wrap .instagram-media {
+            box-shadow: 0 24px 70px rgba(0,0,0,.28);
+        }
+
+        @media (max-width: 767.98px) {
+            .video-frame--instagram,
+            .instagram-player-wrap {
+                min-height: 590px;
+            }
+
+            .instagram-player-wrap {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg site-nav fixed-top">
+        <div class="container-fluid px-lg-4">
+
+            <!-- Socials (left) -->
+            <ul class="nav-socials list-unstyled d-none d-lg-flex mb-0">
+                <li><a href="#" aria-label="Instagram">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.05 1.8.25 2.2.42.6.2 1 .48 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c0 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2 0-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c0-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2m0 2.1c-3.1 0-3.5 0-4.7.07-1.1.05-1.7.24-2.1.4-.5.2-.9.44-1.2.8-.4.3-.6.7-.8 1.2-.2.4-.4 1-.4 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c0 1.1.2 1.7.4 2.1.2.5.4.9.8 1.2.3.4.7.6 1.2.8.4.2 1 .4 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1 0 1.7-.2 2.1-.4.5-.2.9-.4 1.2-.8.4-.3.6-.7.8-1.2.2-.4.4-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c0-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.2-.3-.4-.7-.6-1.2-.8-.4-.2-1-.4-2.1-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.5a4.2 4.2 0 1 1 0 8.4 4.2 4.2 0 0 1 0-8.4zm0 6.9a2.7 2.7 0 1 0 0-5.4 2.7 2.7 0 0 0 0 5.4zm5.4-7.1a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/></svg>
+                </a></li>
+                <li><a href="#" aria-label="Facebook">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V6.8c0-.8.2-1.2 1.4-1.2H17V2.7c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2.1H9v3h2.1V21H14v-8.5h2.4l.4-3z"/></svg>
+                </a></li>
+                <li><a href="#" aria-label="LinkedIn">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 3.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM3 9h3v12H3zM10 9h2.9v1.7h.04c.4-.76 1.4-1.6 2.9-1.6 3.1 0 3.6 2 3.6 4.7V21h-3v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-3z"/></svg>
+                </a></li>
+                <li><a href="#" aria-label="YouTube">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2c-.2-.9-.9-1.6-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4c-.9.2-1.6.9-1.8 1.8C2 8.8 2 12 2 12s0 3.2.4 4.8c.2.9.9 1.6 1.8 1.8 1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4c.9-.2 1.6-.9 1.8-1.8.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15.2V8.8l5.2 3.2z"/></svg>
+                </a></li>
+            </ul>
+
+            <!-- Mobile brand -->
+            <a class="navbar-brand d-lg-none d-flex align-items-center" href="index.html">
+                <img src="assets/img/logo.jpg" alt="Property Farmer" class="brand-logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-bar"></span>
+                <span class="toggler-bar"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav nav-left ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#listings">Our Properties</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#neighborhoods">Neighbourhoods</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                </ul>
+
+                <a class="brand-word d-none d-lg-flex align-items-center" href="index.html">
+                    <img src="assets/img/logo.jpg" alt="Property Farmer" class="brand-logo">
+                </a>
+
+                <ul class="navbar-nav nav-right me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">All Pages</a></li>
+                </ul>
+
+                <a href="#contact" class="btn btn-outline-light-thin">Contact me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <header class="hero">
+        <div class="hero-media">
+            <img src="https://images.unsplash.com/photo-1618828665347-d870c38c95c7?auto=format&fit=crop&w=2000&q=80"
+                alt="Luxury residential property in Lekki, Lagos, Nigeria">
+        </div>
+        <div class="hero-scrim"></div>
+
+        <div class="container hero-inner text-center">
+            <p class="hero-eyebrow">Exceeding expectations</p>
+            <h1 class="hero-title">Homephase realty</h1>
+            <a href="#listings" class="btn btn-outline-light-thin btn-lg-thin">View all homes</a>
+        </div>
+
+        <div class="hero-meta d-none d-lg-flex container">
+            <span>Abuja &nbsp;/&nbsp; Lagos &nbsp;/&nbsp; Port Harcourt</span>
+            <span>RC 2481936</span>
+        </div>
+    </header>
+
+    <!-- ================= INTRO ================= -->
+    <section class="intro">
+        <div class="container">
+            <div class="row gy-4 align-items-end">
+                <div class="col-lg-7">
+                    <h2 class="section-title">Homes that are worth the wait, sold to people who were worth waiting for.</h2>
+                </div>
+                <div class="col-lg-5">
+                    <p class="lede mb-4">I represent a small number of listings each year so every seller gets the
+                        attention a nine-figure portfolio would get. Fewer clients, longer conversations, better
+                        offers.</p>
+                    <a href="#about" class="text-link">Read how I work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= LISTINGS ================= -->
+    <section class="listings" id="listings">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-baseline mb-5 listings-head">
+                <h2 class="section-title mb-0">Currently on the market</h2>
+                <a href="#" class="text-link">See all 24 listings</a>
+            </div>
+
+            <div class="row g-4 g-lg-5">
+
+                <div class="col-md-6">
+                    <a href="#" class="property">
+                        <div class="property-media">
+                            <img src="https://www.superiteafrica.com/uploads/property/1789115362IMG_5401.jpg" alt="Modern detached house in Lagos, Nigeria">
+                            <span class="property-tag">New</span>
+                        </div>
+                        <div class="property-body">
+                            <h3 class="property-name">The Calder House</h3>
+                            <p class="property-loc">14 Aso Drive, Maitama, Abuja</p>
+                            <ul class="property-specs list-unstyled">
+                                <li>5 bed</li><li>6 bath</li><li>7,300 sq ft</li>
+                            </ul>
+                            <p class="property-price">₦3,200,000,000</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6">
+                    <a href="#" class="property">
+                        <div class="property-media">
+                            <img src="https://www.superiteafrica.com/uploads/property/1788903193IMG_5278.jpg" alt="Contemporary luxury home in Lagos, Nigeria">
+                        </div>
+                        <div class="property-body">
+                            <h3 class="property-name">Ridgeline Residence</h3>
+                            <p class="property-loc">22 Palm Estate Road, Asokoro, Abuja</p>
+                            <ul class="property-specs list-unstyled">
+                                <li>4 bed</li><li>4 bath</li><li>5,100 sq ft</li>
+                            </ul>
+                            <p class="property-price">₦2,450,000,000</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6">
+                    <a href="#" class="property">
+                        <div class="property-media">
+                            <img src="https://www.superiteafrica.com/uploads/property/1788888822IMG_5178.JPG" alt="Modern family home in Lagos, Nigeria">
+                            <span class="property-tag">Under offer</span>
+                        </div>
+                        <div class="property-body">
+                            <h3 class="property-name">Wyeth Estate</h3>
+                            <p class="property-loc">7 Gwarinpa Close, Gwarinpa, Abuja</p>
+                            <ul class="property-specs list-unstyled">
+                                <li>7 bed</li><li>9 bath</li><li>11,800 sq ft</li>
+                            </ul>
+                            <p class="property-price">₦5,600,000,000</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6">
+                    <a href="#" class="property">
+                        <div class="property-media">
+                            <img src="https://www.superiteafrica.com/uploads/property/1788361426image-1788361063-1.jpg" alt="Luxury detached house in Lagos, Nigeria">
+                        </div>
+                        <div class="property-body">
+                            <h3 class="property-name">Sea Glass</h3>
+                            <p class="property-loc">9 Banana Island Road, Ikoyi, Lagos</p>
+                            <ul class="property-specs list-unstyled">
+                                <li>3 bed</li><li>3 bath</li><li>3,900 sq ft</li>
+                            </ul>
+                            <p class="property-price">₦3,750,000,000</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= NEIGHBORHOODS ================= -->
+    <section class="neighborhoods" id="neighborhoods">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title mx-auto mb-3">Popular neighbourhoods</h2>
+                <p class="lede mx-auto">I help my clients get clear on what they actually want from a purchase or
+                    sale, then stay close to the process from the first viewing to the final handover.</p>
+            </div>
+
+            <div class="hood-grid">
+                <a href="#" class="hood-card hood-tall">
+                    <img src="https://www.superiteafrica.com/uploads/property/1787936969IMG_5017.jpg" alt="Contemporary residential property in Lagos, Nigeria">
+                    <span class="hood-pin"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                    <span class="hood-name">Maitama</span>
+                </a>
+
+                <a href="#" class="hood-card">
+                    <img src="https://www.superiteafrica.com/uploads/property/1787895092IMG_4969.jpg" alt="Modern luxury home in Lagos, Nigeria">
+                    <span class="hood-pin"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                    <span class="hood-name">Asokoro</span>
+                </a>
+
+                <a href="#" class="hood-card">
+                    <img src="https://www.superiteafrica.com/uploads/property/1787853922IMG_4945.jpg" alt="Premium residential property in Lagos, Nigeria">
+                    <span class="hood-pin"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                    <span class="hood-name">Wuse II</span>
+                </a>
+
+                <a href="#" class="hood-card">
+                    <img src="https://images.nigeriapropertycentre.com/properties/images/thumbs/3618866/06a7c797759961-dazzlingly-designed-5-bed-palatial-home-with-pool-gym-house-detached-duplexes-for-sale-lekki-lagos.webp" alt="Luxury detached duplex in Lekki, Lagos, Nigeria">
+                    <span class="hood-pin"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                    <span class="hood-name">Gwarinpa</span>
+                </a>
+
+                <a href="#" class="hood-card">
+                    <img src="https://images.nigeriapropertycentre.com/properties/images/thumbs/3353863/0699986c66da09-full-smart-5-bedroom-fully-detached-located-in-lekki-phase-1-detached-duplexes-for-sale-lekki-phase-1-lekki-lagos.jpg" alt="Modern detached house in Lekki Phase 1, Lagos, Nigeria">
+                    <span class="hood-pin"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                    <span class="hood-name">Jabi</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <img class="about-portrait"
+                        src="assets/img/homephase.jpg"
+                        alt="Portrait of Homephase">
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <p class="eyebrow">About me</p>
+                    <h2 class="section-title mb-4">Homephase</h2>
+                    <p class="body-text">Eighteen years on the Westside, and I still walk every house before I agree
+                        to list it. I learned the market from the buy side, which is why my pricing rarely misses and
+                        my sellers rarely wait.</p>
+                    <p class="body-text">When a house is ready, I bring it to the twelve people most likely to want
+                        it before it ever reaches the MLS. That is the whole strategy, and it works.</p>
+
+                    <dl class="stats row gy-4 mt-5 mb-0">
+                        <div class="col-4">
+                            <dd>₦420B</dd>
+                            <dt>Closed since 2008</dt>
+                        </div>
+                        <div class="col-4">
+                            <dd>31</dd>
+                            <dt>Days on market, average</dt>
+                        </div>
+                        <div class="col-4">
+                            <dd>98%</dd>
+                            <dt>Of asking price</dt>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= VIDEO WALKTHROUGH ================= -->
+<section class="video-section" id="video">
+    <div class="container">
+
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-7">
+                <p class="eyebrow mb-3">Watch</p>
+
+                <h2 class="section-title mx-auto mb-3">
+                    A walkthrough, from me
+                </h2>
+
+                <p class="lede mx-auto">
+                    A short video says more than a spec sheet ever could.
+                    Here's Homephase Realty walking through one of the
+                    current listings, room by room.
+                </p>
+            </div>
+        </div>
+
+     <div class="ratio ratio-16x9">
+                <iframe
+                    src="https://www.youtube.com/embed/DPcszHj3pmM"
+                    title="YouTube video"
+                    allowfullscreen>
+                </iframe>
+            </div>
+</div>
+    </div>
+</section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title mb-5">How I can help</h2>
+            <div class="row g-0 service-grid">
+                <div class="col-md-4">
+                    <div class="service">
+                        <h3 class="service-title">Selling</h3>
+                        <p class="service-text">Staging, photography, film and a private launch to my buyer list
+                            before the listing goes public.</p>
+                        <a href="#contact" class="text-link">Request a valuation</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service">
+                        <h3 class="service-title">Buying</h3>
+                        <p class="service-text">Access to off-market homes, honest opinions on the ones you should
+                            walk away from, and negotiation that holds.</p>
+                        <a href="#contact" class="text-link">Start a search</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service">
+                        <h3 class="service-title">Investment</h3>
+                        <p class="service-text">Yield analysis, renovation budgets and exit timing for owners holding
+                            more than one property.</p>
+                        <a href="#contact" class="text-link">Book a review</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TESTIMONIAL ================= -->
+    <section class="quote-band">
+        <div class="container">
+            <blockquote>
+                <p>We had two offers in nine days, both above what the previous agent told us the house was worth.
+                    Chidi never once oversold us on anything &mdash; including himself.</p>
+                <footer>Marcus &amp; Ada Reyner &mdash; sold in Maitama, March 2026</footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <h2 class="section-title mb-4">Let's talk about your home</h2>
+                    <p class="body-text">Tell me the address and what you are hoping to do. I answer every message
+                        myself, usually the same day.</p>
+                    <ul class="contact-list list-unstyled mt-4 mb-0">
+                        <li><a href="tel:+2348035550147">+234 803 555 0147</a></li>
+                        <li><a href="mailto:me@homerealty.com">me@homerealty.com</a></li>
+                        <li>Plot 14, Gana Street, Maitama, Abuja</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6 offset-lg-1">
+                    <form class="contact-form" novalidate>
+                        <div class="row g-4">
+                            <div class="col-sm-6">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Homephase">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="you@email.com">
+                            </div>
+                            <div class="col-12">
+                                <label for="address" class="form-label">Property address</label>
+                                <input type="text" class="form-control" id="address" placeholder="Street, city">
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">What can I help with?</label>
+                                <textarea class="form-control" id="message" rows="4"
+                                    placeholder="Thinking of selling in the spring&hellip;"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-dark-thin">Send message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-5">
+                    <div class="footer-word d-flex align-items-center">
+                        <img src="assets/img/logo.jpg" alt="Homephase Realty" class="brand-logo footer-logo">
+                    </div>
+                    <p class="footer-text">Residential sales and acquisitions across Abuja and Lagos.
+                        Registered with the Corporate Affairs Commission, RC 2481936.</p>
+                </div>
+                <div class="col-6 col-lg-3 offset-lg-1">
+                    <h4 class="footer-heading">Explore</h4>
+                    <ul class="footer-links list-unstyled mb-0">
+                        <li><a href="#listings">Our properties</a></li>
+                        <li><a href="#about">About me</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h4 class="footer-heading">Follow</h4>
+                    <ul class="footer-links list-unstyled mb-0">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
+                <span>&copy; 2026 Homephase Realty</span>
+                <span>Equal Housing Opportunity</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    
+   <script>
+    // Solid nav background once the hero is scrolled past
+    const nav = document.querySelector('.site-nav');
+
+    const onScroll = () => {
+        nav.classList.toggle('is-solid', window.scrollY > 80);
+    };
+
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+</script>
+</body>
+
+</html>
